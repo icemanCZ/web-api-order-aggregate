@@ -14,6 +14,9 @@ namespace OrderAggregate.Core.Extensions
 {
     public static class IServiceCollectionExtensions
     {
+        /// <summary>
+        /// register all necessary services for OrderAggregateCode functionality
+        /// </summary>
         public static IServiceCollection UseOrderAggregate(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton<IRepository<Order>, OrderInMemoryRepository>();

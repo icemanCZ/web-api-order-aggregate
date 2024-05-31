@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace OrderAggregate.Core.Repositories
 {
+    /// <summary>
+    /// in memory store for Orders, all data will be lost after app restart
+    /// </summary>
     public class OrderInMemoryRepository : IRepository<Order>
     {
         private readonly ILogger<OrderInMemoryRepository> _logger;

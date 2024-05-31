@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace OrderAggregate.Core.Services
 {
+    /// <summary>
+    /// service for data aggregation
+    /// </summary>
     public class OrderAggregatorService
     {
         private readonly ILogger<OrderAggregatorService> _logger;

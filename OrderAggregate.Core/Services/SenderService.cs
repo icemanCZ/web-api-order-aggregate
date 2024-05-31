@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace OrderAggregate.Core.Services
 {
+    /// <summary>
+    /// background task for periodic sending aggregated data to external system
+    /// </summary>
     public class SenderService : IHostedService
     {
         private readonly ILogger<SenderService> _logger;
